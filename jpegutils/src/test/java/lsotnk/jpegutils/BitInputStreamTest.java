@@ -9,7 +9,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class BitInputStreamTest {
+public class BitInputStreamTest extends AbstractTest {
 
     @Test
     public void testReadBits() throws IOException {

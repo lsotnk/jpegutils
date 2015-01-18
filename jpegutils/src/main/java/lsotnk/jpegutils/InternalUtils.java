@@ -39,6 +39,16 @@ class InternalUtils {
         }
     }
 
+    static final void checkState(final boolean expression) {
+        if (!expression) {
+            throw new IllegalStateException();
+        }
+    }
+
+    static final void checkArgument(final boolean expression) {
+        checkArgument(expression, null);
+    }
+
     static final void checkArgument(final boolean expression, final String errorMessage) {
         if (!expression) {
             throw new IllegalArgumentException(errorMessage);

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class BitOutputStreamTest {
+public class BitOutputStreamTest extends AbstractTest {
 
     @Test
     public void testWriteNoBits() throws IOException {

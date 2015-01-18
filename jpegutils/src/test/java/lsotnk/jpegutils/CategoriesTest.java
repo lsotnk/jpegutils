@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class CategoriesTest {
+public class CategoriesTest extends AbstractTest {
 
     @Test
     public void testCategories() {

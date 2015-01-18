@@ -5,9 +5,9 @@ import lsotnk.jpegutils.matrix.IntMatrix;
 
 import org.junit.Test;
 
-public class QuantizationTest {
+public class QuantizationTest extends AbstractTest {
 
-    public static Matrix TESTM = new IntMatrix(16, 16, new int[][] {
+    private static Matrix TESTM = new IntMatrix(16, 16, new int[][] {
             // @formatter:off
             { 100,  1, 1, 1, 1, 2, 3, 3,  60,  1, 1, 1, 1, 2, 3, 3 },
             {   1, 50, 1, 1, 1, 3, 3, 3,  1, 50, 1, 1, 1, 3, 3, 3 },
@@ -28,7 +28,7 @@ public class QuantizationTest {
             // @formatter:on
             });
 
-    public static Matrix TESTM_Q = new IntMatrix(8, 8, new int[][] {
+    private static Matrix TESTM_Q = new IntMatrix(8, 8, new int[][] {
             // @formatter:off
             { 20, 1, 1, 1, 1, 2, 3, 3 },
             { 1, 5, 1, 1, 1, 3, 3, 3 },
